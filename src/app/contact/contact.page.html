@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Contact</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-item class="formItem">
+    <ion-label position="floating">Your email</ion-label>
+    <ion-input type="email" [(ngModel)]="email"></ion-input>
+  </ion-item>
+
+  <ion-item class="formItem">
+    <ion-label position="floating">Subject</ion-label>
+    <ion-input type="text" [(ngModel)]="subject"></ion-input>
+  </ion-item>
+
+  <ion-item class="formItem" autoGrow="true">
+    <ion-label position="floating">Message</ion-label>
+    <ion-textarea type="text" autoGrow="true" [(ngModel)]="message"></ion-textarea>
+  </ion-item>
+
+  <ion-button class="formItem" (click)="sendMessage()">Send</ion-button>
+
+</ion-content>
