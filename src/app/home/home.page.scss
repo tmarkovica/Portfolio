@@ -1,27 +1,108 @@
-#container {
-  text-align: center;
+/* ion-header {
+  left: 0px;
+  right: 0px;
+  top: 0px;
+} */
 
+.headerToolbar {
+  display: inline-flex;
+}
+
+.headerToolbarTextAlign {
+  text-align: end;
+}
+
+#myName {
+  font-size: 3em;
+  margin-left: 6%;
+}
+
+#firstNameColor {
+  color: rgb(252, 125, 41);
+}
+
+#lastNameColor {
+  color: green;
+}
+
+.sidebar {
+  background-color: #ff00006e;
+  height: 100%;
+  width: 5%;
+  float: left;
+  position: fixed;
+  display: flex;
+  align-items: center;
+}
+
+.iconGrid {
+  padding: 0px;
+}
+
+ion-header {
+  padding-left: 5%;
+}
+
+.contentLeftMargin {
+  margin-left: 6%;
+  margin-right: 1.2%;
+}
+
+.topMargin10px {
+  margin-top: 10px;
+}
+
+.horizontalLine {
+  background: white;
+  size: 4px;
+  margin-right: 1%;
+}
+
+.iconLink:hover {
+  background-color: green;
+}
+
+
+
+
+.iconInfo {  
+  display: none;
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  visibility: hidden;
+  margin-left: 100%;
+  background-color: green;
+  height: 8%;
+  text-align: center;
+  padding: 25px;
+  //border: 2px solid black;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.dropdown-content:hover span {
+  visibility: visible;
+  display: block;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+.contactInfoIcons {
+  height: 30px;
+  width: 40px;
+  padding-right: 10px;
+  
 }
 
-#container a {
-  text-decoration: none;
+ion-label {
+  text-align: center;
+}
+
+.tableTextAlignCenter {
+  text-align: center;
+}
+
+.tebleCells {
+  border-color: white; 
+  border-width: .01em; 
+  //border-style:solid; margin-bottom : -1px;
+}
+
+.tableHeaderTextColor {
+  color: #6c7427;
 }

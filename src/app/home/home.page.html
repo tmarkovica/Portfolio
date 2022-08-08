@@ -1,24 +1,206 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Portfolio
-    </ion-title>
 
-    <ion-button (click)="goToContactPage()">Contact</ion-button>
-
-  </ion-toolbar>
-</ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+ 
+  
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<div class="sidebar">
+  <ion-grid class="iconGrid">
+    
+    <ion-row class="iconLink">
+      <a href="https://www.linkedin.com/in/tomislav-markovica-3118bb203/">
+        <img src="assets/icon/linkedin.png" alt="">
+      </a>
+    </ion-row>
+  
+    <ion-row class="iconLink">
+      <a href="https://github.com/tmarkovica">
+        <img src="assets/icon/github.png" alt="">
+      </a>
+    </ion-row>
+  </ion-grid>
+  
+  
+</div>
+
+<ion-header [translucent]="true">
+  <ion-toolbar class="headerToolbarTextAlign">
+    <div class="headerToolbar">
+      <ion-title>
+        Portfolio
+      </ion-title>
+    </div>
+  </ion-toolbar>
+</ion-header>
+  
+
+  <h1 id="myName">
+    <b id="firstNameColor">Tomislav </b>
+    <b id="lastNameColor">Markovica</b>
+  </h1>
+
+  <ion-item class="contentLeftMargin">
+  
+    <ion-label class="contactLabel">
+      <img src="assets/icon/phone.png" alt="" class="contactInfoIcons">
+      (+385)95 527 9214
+    </ion-label>
+
+    <ion-label class="contactLabel">
+      <img src="assets/icon/gmail.png" alt="" class="contactInfoIcons">
+      tomislav.markovica1@gmail.com
+    </ion-label>
+  </ion-item>
+
+
+  
+
+  <div class="contentLeftMargin">
+    <h2>Biography</h2>
+    <hr class="horizontalLine">
+      I finished elementary school in Kalinovac. In 2017 I finished highschool in Đurđevac for Computer Technician. That year 
+      I enroled to Faculty of Electrical Engineering, Computer Science and Information Technologies in Osijek in Computer Engineering programme.
+      In 2021. I completed my undergraduate study and continued with Software Engineering graduate study programme.
   </div>
+
+  <ion-grid class="contentLeftMargin">
+    <h2>Skills</h2>
+    <hr class="horizontalLine">
+
+    <ion-row>
+      <ion-col>
+        <ion-row>C/C++</ion-row>
+        <ion-row>C#</ion-row>
+        <ion-row>Java</ion-row>
+        <ion-row>Kotlin</ion-row>
+        <ion-row>SQL</ion-row>
+        <ion-row>Git</ion-row>
+      </ion-col>
+      <ion-col>    
+        <ion-row>HTML</ion-row>
+        <ion-row>CSS</ion-row>    
+        <ion-row>TypeScript</ion-row>
+        <ion-row>Angular</ion-row>
+        <ion-row>Ionic</ion-row>
+      </ion-col>
+      <ion-col>        
+        <ion-row>Unity</ion-row>
+        <ion-row>Android Studio</ion-row>
+        <ion-row>Design Patterns</ion-row>
+        <ion-row>Alghoritms & Data Structures</ion-row>
+        <ion-row>MS Office (Word, Excel, PowerPoint)</ion-row>
+      </ion-col>
+    </ion-row>
+    
+  </ion-grid>
+
+  <ion-grid class="contentLeftMargin tebleCells">
+    <h2>Language Skills</h2>
+    <hr class="horizontalLine">
+
+    <ion-col class="tableTextAlignCenter">
+      <ion-row class="tableHeaderTextColor">
+        <ion-col></ion-col>
+        <ion-col>Listening</ion-col>
+        <ion-col>Reading</ion-col>
+        <ion-col>Spoken production</ion-col>
+        <ion-col>Spoken interaction</ion-col>
+        <ion-col>Writing</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col><b>Croatian</b></ion-col>
+        <ion-col>Native</ion-col>
+        <ion-col></ion-col>
+        <ion-col></ion-col>
+        <ion-col></ion-col>
+        <ion-col></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col><b>English</b></ion-col>
+        <ion-col>C1</ion-col>
+        <ion-col>C1</ion-col>
+        <ion-col>B2</ion-col>
+        <ion-col>B2</ion-col>
+        <ion-col>C1</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col><b>German</b></ion-col>
+        <ion-col>A1</ion-col>
+        <ion-col>A1</ion-col>
+        <ion-col>A1</ion-col>
+        <ion-col>A1</ion-col>
+        <ion-col>A2</ion-col>
+      </ion-row>
+    </ion-col>
+
+  </ion-grid>
+
+  <ion-grid class="contentLeftMargin">
+    <h2>My projects</h2>
+    <hr class="horizontalLine">
+
+    <ion-row class="topMargin10px">
+      <ion-col>
+        <a href="https://github.com/tmarkovica/ORWiMA-HTML-projekt" target="_blank">https://github.com/tmarkovica/ORWiMA-HTML-projekt</a>
+      </ion-col>
+      <ion-col>
+        <a href="https://tmarkovica.github.io/ORWiMA-HTML-projekt/index.html" target=”_blank”>
+          Fictive Company Website
+        </a>
+      </ion-col>
+      <ion-col>
+        Description
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="topMargin10px">
+      <ion-col>
+        <a href="https://github.com/ferit2M/ValueCalc" target="_blank">https://github.com/ferit2M/ValueCalc</a>
+      </ion-col>
+      <ion-col>
+        <a href="https://valuecalc-d7cea.web.app" target=”_blank”>ValueCalc</a>
+      </ion-col>
+      <ion-col>
+        Collaboration with <a href="https://github.com/marjanovicm13">Mihael Marjanović</a>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="topMargin10px">
+      <ion-col>
+        <a href="https://github.com/tmarkovica/RUAP-projekt" target="_blank">https://github.com/tmarkovica/RUAP-projekt</a>
+      </ion-col>
+      <ion-col>
+        <a href="https://recognition-of-thyroid-disease.web.app" target=”_blank”>Thyroid disease recognition</a>
+      </ion-col>
+      <ion-col>
+        Description
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="topMargin10px">
+      <ion-col>
+        <a href="https://github.com/tmarkovica/FoodApp_Ionic_Spin" target="_blank">https://github.com/tmarkovica/FoodApp_Ionic_Spin</a>
+      </ion-col>
+      <ion-col>
+        <a href="https://tmark-spin.web.app/" target=”_blank”>Food app</a>
+      </ion-col>
+      <ion-col>
+        Description
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="topMargin10px">
+      <ion-col>
+        <a href="https://github.com/tmarkovica/Earth_atmosphere" target="_blank">https://github.com/tmarkovica/Earth_atmosphere</a>
+      </ion-col>
+      <ion-col>
+        <a href="https://earth-atmosphere.web.app/" target=”_blank”>Earth's atmosphere</a>
+      </ion-col>
+      <ion-col>
+        Description
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
 
 </ion-content>
