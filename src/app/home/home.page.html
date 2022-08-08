@@ -26,45 +26,42 @@
 <ion-header [translucent]="true">
   <ion-toolbar class="headerToolbarTextAlign">
     <div class="headerToolbar">
-      <ion-title>
-        Portfolio
+      <ion-title color="green">
+        > <span class="typewriter"></span>
       </ion-title>
     </div>
   </ion-toolbar>
 </ion-header>
   
 
-  <h1 id="myName">
+  <h1 id="myName" class="waviy nameBackgroundAnimation">
     <b id="firstNameColor">Tomislav </b>
     <b id="lastNameColor">Markovica</b>
   </h1>
 
-  <ion-item class="contentLeftMargin">
-  
-    <ion-label class="contactLabel">
+  <div class="contentLeftMargin contactCard">
+    <div class="contactCardItem">
       <img src="assets/icon/phone.png" alt="" class="contactInfoIcons">
       (+385)95 527 9214
-    </ion-label>
-
-    <ion-label class="contactLabel">
+    </div>
+    <div class="contactCardItem">
       <img src="assets/icon/gmail.png" alt="" class="contactInfoIcons">
       tomislav.markovica1@gmail.com
-    </ion-label>
-  </ion-item>
+    </div>
+  </div>  
 
-
-  
-
-  <div class="contentLeftMargin">
-    <h2>Biography</h2>
+  <div class="contentLeftMargin clearFloat">
+    <h2 class="typewriterHeadings"></h2>
     <hr class="horizontalLine">
-      I finished elementary school in Kalinovac. In 2017 I finished highschool in Đurđevac for Computer Technician. That year 
-      I enroled to Faculty of Electrical Engineering, Computer Science and Information Technologies in Osijek in Computer Engineering programme.
-      In 2021. I completed my undergraduate study and continued with Software Engineering graduate study programme.
+      <div>
+        I finished elementary school in Kalinovac. In 2017 I finished highschool in Đurđevac for Computer Technician. That year 
+        I enroled to Faculty of Electrical Engineering, Computer Science and Information Technologies in Osijek in Computer Engineering programme.
+        In 2021. I completed my undergraduate study and continued with Software Engineering graduate study programme.
+      </div>
   </div>
 
   <ion-grid class="contentLeftMargin">
-    <h2>Skills</h2>
+    <h2 class="typewriterHeadings"></h2>
     <hr class="horizontalLine">
 
     <ion-row>
@@ -95,7 +92,7 @@
   </ion-grid>
 
   <ion-grid class="contentLeftMargin tebleCells">
-    <h2>Language Skills</h2>
+    <h2 class="typewriterHeadings"></h2>
     <hr class="horizontalLine">
 
     <ion-col class="tableTextAlignCenter">
@@ -110,10 +107,10 @@
       <ion-row>
         <ion-col><b>Croatian</b></ion-col>
         <ion-col>Native</ion-col>
-        <ion-col></ion-col>
-        <ion-col></ion-col>
-        <ion-col></ion-col>
-        <ion-col></ion-col>
+        <ion-col>Native</ion-col>
+        <ion-col>Native</ion-col>
+        <ion-col>Native</ion-col>
+        <ion-col>Native</ion-col>
       </ion-row>
       <ion-row>
         <ion-col><b>English</b></ion-col>
@@ -136,10 +133,10 @@
   </ion-grid>
 
   <ion-grid class="contentLeftMargin">
-    <h2>My projects</h2>
+    <h2 class="typewriterHeadings"></h2>
     <hr class="horizontalLine">
 
-    <ion-row class="topMargin10px">
+    <ion-row class="topMargin10px highlightProject">
       <ion-col>
         <a href="https://github.com/tmarkovica/ORWiMA-HTML-projekt" target="_blank">https://github.com/tmarkovica/ORWiMA-HTML-projekt</a>
       </ion-col>
@@ -149,11 +146,13 @@
         </a>
       </ion-col>
       <ion-col>
-        Description
+        Project for 
+        <a href="https://www.ferit.unios.hr/2021/upisi-i-studiji/preddiplomski-sveucilisni-studiji#racunarstvo-stari-studij#PRK504-18" target="_blank">
+          Web Dvelopment Basics</a> course, HTML and CSS.
       </ion-col>
     </ion-row>
 
-    <ion-row class="topMargin10px">
+    <ion-row class="topMargin10px highlightProject">
       <ion-col>
         <a href="https://github.com/ferit2M/ValueCalc" target="_blank">https://github.com/ferit2M/ValueCalc</a>
       </ion-col>
@@ -161,11 +160,14 @@
         <a href="https://valuecalc-d7cea.web.app" target=”_blank”>ValueCalc</a>
       </ion-col>
       <ion-col>
-        Collaboration with <a href="https://github.com/marjanovicm13">Mihael Marjanović</a>
+        Collaboration with <a href="https://github.com/marjanovicm13">Mihael Marjanović</a>.
+        <br>
+        <a href="https://www.ferit.unios.hr/2021/upisi-i-studiji/diplomski-sveucilisni-studij#racunarstvo-izborni-blok-programsko-inzenjerstvo#DRcdKb2-02-18" target="_blank">
+          Web Programming</a> course project, Ionic, HTML and SCSS.
       </ion-col>
     </ion-row>
 
-    <ion-row class="topMargin10px">
+    <ion-row class="topMargin10px highlightProject">
       <ion-col>
         <a href="https://github.com/tmarkovica/RUAP-projekt" target="_blank">https://github.com/tmarkovica/RUAP-projekt</a>
       </ion-col>
@@ -173,11 +175,14 @@
         <a href="https://recognition-of-thyroid-disease.web.app" target=”_blank”>Thyroid disease recognition</a>
       </ion-col>
       <ion-col>
-        Description
+        Project for 
+        <a href="https://www.ferit.unios.hr/2021/upisi-i-studiji/diplomski-sveucilisni-studij#racunarstvo-izborni-blok-programsko-inzenjerstvo#DRcd1-06-18" target="_blank">
+          Service Computing and Big Data course (hrv. Računarstvo usluga i analiza podataka)</a>. 
+          Web application developed in Ionic that uses Azure Machine Learning API to predict thyroid disease.
       </ion-col>
     </ion-row>
 
-    <ion-row class="topMargin10px">
+    <ion-row class="topMargin10px highlightProject">
       <ion-col>
         <a href="https://github.com/tmarkovica/FoodApp_Ionic_Spin" target="_blank">https://github.com/tmarkovica/FoodApp_Ionic_Spin</a>
       </ion-col>
@@ -185,11 +190,11 @@
         <a href="https://tmark-spin.web.app/" target=”_blank”>Food app</a>
       </ion-col>
       <ion-col>
-        Description
+        Developed at summer code academy for Angular/Ionic.
       </ion-col>
     </ion-row>
 
-    <ion-row class="topMargin10px">
+    <ion-row class="topMargin10px highlightProject">
       <ion-col>
         <a href="https://github.com/tmarkovica/Earth_atmosphere" target="_blank">https://github.com/tmarkovica/Earth_atmosphere</a>
       </ion-col>
@@ -197,10 +202,11 @@
         <a href="https://earth-atmosphere.web.app/" target=”_blank”>Earth's atmosphere</a>
       </ion-col>
       <ion-col>
-        Description
+        <a href="https://www.ferit.unios.hr/2021/upisi-i-studiji/diplomski-sveucilisni-studij#racunarstvo-izborni-blok-programsko-inzenjerstvo#DRcd2-03"
+        target="_blank">Data Visualization</a> project using D3.js library.
       </ion-col>
     </ion-row>
 
   </ion-grid>
-
+  
 </ion-content>

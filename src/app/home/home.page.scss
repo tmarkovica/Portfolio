@@ -1,8 +1,6 @@
-/* ion-header {
-  left: 0px;
-  right: 0px;
-  top: 0px;
-} */
+* {
+  font-family: 'Inconsolata', monospace;
+}
 
 .headerToolbar {
   display: inline-flex;
@@ -15,6 +13,7 @@
 #myName {
   font-size: 3em;
   margin-left: 6%;
+  float: left;
 }
 
 #firstNameColor {
@@ -28,7 +27,7 @@
 .sidebar {
   background-color: #ff00006e;
   height: 100%;
-  width: 5%;
+  width: 3%;
   float: left;
   position: fixed;
   display: flex;
@@ -62,9 +61,6 @@ ion-header {
   background-color: green;
 }
 
-
-
-
 .iconInfo {  
   display: none;
   position: absolute;
@@ -74,7 +70,6 @@ ion-header {
   height: 8%;
   text-align: center;
   padding: 25px;
-  //border: 2px solid black;
 }
 
 .dropdown-content:hover span {
@@ -89,10 +84,6 @@ ion-header {
   
 }
 
-ion-label {
-  text-align: center;
-}
-
 .tableTextAlignCenter {
   text-align: center;
 }
@@ -100,9 +91,48 @@ ion-label {
 .tebleCells {
   border-color: white; 
   border-width: .01em; 
-  //border-style:solid; margin-bottom : -1px;
 }
 
 .tableHeaderTextColor {
   color: #6c7427;
+}
+
+.contactCard {
+  background-color: rgba(76, 83, 85, 0.158);
+  float: right;
+  margin-top: 15px;
+  padding: 5px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-right: 1.2%;
+}
+
+.contactCardItem {
+  display: flex;
+  align-items: center;
+  padding-top: 10px
+}
+
+.clearFloat {
+  clear: both;
+}
+
+.nameBackgroundAnimation {
+  animation-name: backgroundColorAnimation;
+  animation-duration: 4s;
+  animation-timing-function: ease-out;
+}
+@keyframes backgroundColorAnimation {
+  0% {background-color:transparent; left:0px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  100% {background-color:transparent; left:0px; top:0px;}
+}
+
+.highlightProject {
+  display: flex;
+  align-items: center;
+}
+
+.highlightProject:hover {
+  background-color: rgb(37, 37, 37);
 }
