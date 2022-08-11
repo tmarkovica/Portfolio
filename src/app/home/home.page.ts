@@ -14,7 +14,7 @@ export class HomePage implements OnInit {
   constructor(private router: Router) {}
 
   ngOnInit(): void {
-    const target = document.querySelector('.typewriter');
+    /* const target = document.querySelector('.typewriter');
     const writer = new Typewriter(target, {
       loop: true,
       typeColor: 'blue'
@@ -22,7 +22,7 @@ export class HomePage implements OnInit {
     writer
       .type('Portfolio')
       .rest(2000)
-      .start();
+      .start(); */
 
     var targetHeadings: NodeListOf<Element> = document.querySelectorAll('.typewriterHeadings')
     let index = 0;

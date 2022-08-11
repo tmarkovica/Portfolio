@@ -1,54 +1,30 @@
 
 
-<ion-content [fullscreen]="true">
- 
-  
+<ion-content>
+  <app-header-toolbar></app-header-toolbar>
 
-<div class="sidebar">
-  <ion-grid class="iconGrid">
-    
-    <ion-row class="iconLink">
-      <a href="https://www.linkedin.com/in/tomislav-markovica-3118bb203/">
-        <img src="assets/icon/linkedin.png" alt="">
-      </a>
-    </ion-row>
-  
-    <ion-row class="iconLink">
-      <a href="https://github.com/tmarkovica">
-        <img src="assets/icon/github.png" alt="">
-      </a>
-    </ion-row>
-  </ion-grid>
-  
-  
-</div>
+  <div class="sidebar">
+  </div>
 
-<ion-header [translucent]="true">
-  <ion-toolbar class="headerToolbarTextAlign">
-    <div class="headerToolbar">
-      <ion-title color="green">
-        > <span class="typewriter"></span>
-      </ion-title>
-    </div>
-  </ion-toolbar>
-</ion-header>
-  
+  <div class="info-segment">
+    <h1 id="myName" class="waviy nameBackgroundAnimation">
+      <b id="firstNameColor">Tomislav </b>
+      <b id="lastNameColor">Markovica</b>
+    </h1>
 
-  <h1 id="myName" class="waviy nameBackgroundAnimation">
-    <b id="firstNameColor">Tomislav </b>
-    <b id="lastNameColor">Markovica</b>
-  </h1>
-
-  <div class="contentLeftMargin contactCard">
-    <div class="contactCardItem">
-      <img src="assets/icon/phone.png" alt="" class="contactInfoIcons">
-      (+385)95 527 9214
-    </div>
-    <div class="contactCardItem">
-      <img src="assets/icon/gmail.png" alt="" class="contactInfoIcons">
-      tomislav.markovica1@gmail.com
-    </div>
-  </div>  
+    <ion-card class="contact-info">
+      <ion-item>
+        <ion-img src="assets/icon/phone.png" title="My phone number" class="contactInfoIcons"></ion-img>
+        <ion-label class="contact-label">(+385) 95 527 9214</ion-label>
+        <ion-icon name="copy" hidden="true"></ion-icon>
+      </ion-item>
+      <ion-item>
+        <ion-img src="assets/icon/gmail.png" title="My email" class="contactInfoIcons"></ion-img>
+        <ion-label class="contact-label">tomislav.markovica1@gmail.com</ion-label>
+        <ion-icon name="copy" hidden="true"></ion-icon>
+      </ion-item>
+    </ion-card>
+  </div>
 
   <div class="contentLeftMargin clearFloat">
     <h2 class="typewriterHeadings"></h2>
@@ -136,15 +112,15 @@
     <h2 class="typewriterHeadings"></h2>
     <hr class="horizontalLine">
 
-    <ion-row class="topMargin10px highlightProject">
-      <ion-col>
-        <a href="https://github.com/tmarkovica/ORWiMA-HTML-projekt" target="_blank">https://github.com/tmarkovica/ORWiMA-HTML-projekt</a>
-      </ion-col>
+    <ion-row class="topMargin10px highlightProject column-widths">
       <ion-col>
         <a href="https://tmarkovica.github.io/ORWiMA-HTML-projekt/index.html" target=”_blank”>
           Fictive Company Website
         </a>
       </ion-col>
+      <ion-col>
+        <a href="https://github.com/tmarkovica/ORWiMA-HTML-projekt" target="_blank">repository</a>
+      </ion-col>      
       <ion-col>
         Project for 
         <a href="https://www.ferit.unios.hr/2021/upisi-i-studiji/preddiplomski-sveucilisni-studiji#racunarstvo-stari-studij#PRK504-18" target="_blank">
@@ -152,28 +128,28 @@
       </ion-col>
     </ion-row>
 
-    <ion-row class="topMargin10px highlightProject">
-      <ion-col>
-        <a href="https://github.com/ferit2M/ValueCalc" target="_blank">https://github.com/ferit2M/ValueCalc</a>
-      </ion-col>
+    <ion-row class="topMargin10px highlightProject column-widths">
       <ion-col>
         <a href="https://valuecalc-d7cea.web.app" target=”_blank”>ValueCalc</a>
+      </ion-col>
+      <ion-col>
+        <a href="https://github.com/ferit2M/ValueCalc" target="_blank">repository</a>
       </ion-col>
       <ion-col>
         Collaboration with <a href="https://github.com/marjanovicm13">Mihael Marjanović</a>.
         <br>
         <a href="https://www.ferit.unios.hr/2021/upisi-i-studiji/diplomski-sveucilisni-studij#racunarstvo-izborni-blok-programsko-inzenjerstvo#DRcdKb2-02-18" target="_blank">
-          Web Programming</a> course project, Ionic, HTML and SCSS.
+          Web Programming</a> course project, Ionic, HTML, SCSS and SQL database and .NET ASPN for backend.
       </ion-col>
     </ion-row>
 
-    <ion-row class="topMargin10px highlightProject">
-      <ion-col>
-        <a href="https://github.com/tmarkovica/RUAP-projekt" target="_blank">https://github.com/tmarkovica/RUAP-projekt</a>
-      </ion-col>
+    <ion-row class="topMargin10px highlightProject column-widths">
       <ion-col>
         <a href="https://recognition-of-thyroid-disease.web.app" target=”_blank”>Thyroid disease recognition</a>
       </ion-col>
+      <ion-col>
+        <a href="https://github.com/tmarkovica/RUAP-projekt" target="_blank">repository</a>
+      </ion-col>      
       <ion-col>
         Project for 
         <a href="https://www.ferit.unios.hr/2021/upisi-i-studiji/diplomski-sveucilisni-studij#racunarstvo-izborni-blok-programsko-inzenjerstvo#DRcd1-06-18" target="_blank">
@@ -182,25 +158,25 @@
       </ion-col>
     </ion-row>
 
-    <ion-row class="topMargin10px highlightProject">
-      <ion-col>
-        <a href="https://github.com/tmarkovica/FoodApp_Ionic_Spin" target="_blank">https://github.com/tmarkovica/FoodApp_Ionic_Spin</a>
-      </ion-col>
+    <ion-row class="topMargin10px highlightProject column-widths">
       <ion-col>
         <a href="https://tmark-spin.web.app/" target=”_blank”>Food app</a>
+      </ion-col>
+      <ion-col>
+        <a href="https://github.com/tmarkovica/FoodApp_Ionic_Spin" target="_blank">repository</a>
       </ion-col>
       <ion-col>
         Developed at summer code academy for Angular/Ionic.
       </ion-col>
     </ion-row>
 
-    <ion-row class="topMargin10px highlightProject">
-      <ion-col>
-        <a href="https://github.com/tmarkovica/Earth_atmosphere" target="_blank">https://github.com/tmarkovica/Earth_atmosphere</a>
-      </ion-col>
+    <ion-row class="topMargin10px highlightProject column-widths">
       <ion-col>
         <a href="https://earth-atmosphere.web.app/" target=”_blank”>Earth's atmosphere</a>
       </ion-col>
+      <ion-col>
+        <a href="https://github.com/tmarkovica/Earth_atmosphere" target="_blank">repository</a>
+      </ion-col>   
       <ion-col>
         <a href="https://www.ferit.unios.hr/2021/upisi-i-studiji/diplomski-sveucilisni-studij#racunarstvo-izborni-blok-programsko-inzenjerstvo#DRcd2-03"
         target="_blank">Data Visualization</a> project using D3.js library.
@@ -208,5 +184,5 @@
     </ion-row>
 
   </ion-grid>
-  
+
 </ion-content>

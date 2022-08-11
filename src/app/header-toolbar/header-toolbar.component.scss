@@ -1,0 +1,39 @@
+// ion-toolbar {
+//     height: 5%;
+//     position: fixed;
+//     display: inline-flex;
+// }
+
+// .icon {
+//     position: fixed;
+//     height: 100%;    
+//     // margin: 0px;
+//     // padding: 0px;
+//     top: 0px;
+// }
+
+// /* .headerToolbarTextAlign {
+//     text-align: end;
+// }
+.toolbar {
+    height: 3em;
+    width: 100%;
+    background: #444242;
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    margin-bottom: 3em;
+
+    align-items: center;
+    justify-content: center;
+    text-align: end;
+    padding-left: 5%;
+}
+
+.icon-bar a img {
+    max-height: 40px;
+}
+
+.icon-bar a img:hover {
+    background-color: green;
+}

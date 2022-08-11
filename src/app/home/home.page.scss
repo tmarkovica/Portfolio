@@ -2,12 +2,13 @@
   font-family: 'Inconsolata', monospace;
 }
 
-.headerToolbar {
-  display: inline-flex;
+ion-content {
+  --padding-bottom: 600px;
 }
 
-.headerToolbarTextAlign {
-  text-align: end;
+.info-segment {
+  margin-top: 3em;
+  justify-content: start;
 }
 
 #myName {
@@ -15,6 +16,25 @@
   margin-left: 6%;
   float: left;
 }
+
+.contact-info {
+  float: right;
+  padding-left: 30px;
+  padding-right: 30px;
+  z-index: 0;
+}
+
+.contactInfoIcons {
+  height: 30px;
+  width: 40px;
+  padding-right: 10px; 
+}
+
+.contact-label {
+  padding-right: 10px;
+}
+
+
 
 #firstNameColor {
   color: rgb(252, 125, 41);
@@ -34,12 +54,13 @@
   align-items: center;
 }
 
-.iconGrid {
+/* .iconGrid {
   padding: 0px;
-}
+} */
 
 ion-header {
   padding-left: 5%;
+  position: relative;
 }
 
 .contentLeftMargin {
@@ -57,9 +78,9 @@ ion-header {
   margin-right: 1%;
 }
 
-.iconLink:hover {
+/* .iconLink:hover {
   background-color: green;
-}
+} */
 
 .iconInfo {  
   display: none;
@@ -77,12 +98,7 @@ ion-header {
   display: block;
 }
 
-.contactInfoIcons {
-  height: 30px;
-  width: 40px;
-  padding-right: 10px;
-  
-}
+
 
 .tableTextAlignCenter {
   text-align: center;
@@ -135,4 +151,11 @@ ion-header {
 
 .highlightProject:hover {
   background-color: rgb(37, 37, 37);
+}
+
+
+
+.column-widths {
+  display: grid;
+  grid-template-columns: 25% 25% 50%;
 }
