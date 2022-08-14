@@ -10,6 +10,37 @@
     </a>
   </div>
 
+  <ion-grid class="nav-controls" [hidden]="isMobile">
+    <ion-row>
+      <ion-col>
+        <ion-button class="nav-button" routerLink="/about" routerLinkActive="active">About me</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button class="nav-button" routerLink="/contact" routerLinkActive="active">Contact me</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div class="nav-controls" [hidden]="!isMobile" >
+    <button class="nav-button" routerLink="/about" routerLinkActive="active">About me</button>
+
+
+  </div>
+
+  <mat-toolbar>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>My App</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>share</mat-icon>
+    </button>
+  </mat-toolbar>
+
   <ion-title>
     > <span class="typewriter"></span>
   </ion-title>

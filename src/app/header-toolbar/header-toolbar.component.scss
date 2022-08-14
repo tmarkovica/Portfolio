@@ -1,20 +1,3 @@
-// ion-toolbar {
-//     height: 5%;
-//     position: fixed;
-//     display: inline-flex;
-// }
-
-// .icon {
-//     position: fixed;
-//     height: 100%;    
-//     // margin: 0px;
-//     // padding: 0px;
-//     top: 0px;
-// }
-
-// /* .headerToolbarTextAlign {
-//     text-align: end;
-// }
 .toolbar {
     height: 3em;
     width: 100%;
@@ -36,4 +19,17 @@
 
 .icon-bar a img:hover {
     background-color: green;
+}
+
+.nav-controls {
+    padding-left: 30px;
+}
+
+.nav-button {
+    --background: transparent;
+    width: 100%;
+}
+
+.nav-button:hover {
+    border-bottom: 4px blue solid;
 }

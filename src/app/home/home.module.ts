@@ -6,6 +6,7 @@ import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
 import { HeaderToolbarComponent } from '../header-toolbar/header-toolbar.component';
+import { ClipboardModule } from 'ngx-clipboard';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { HeaderToolbarComponent } from '../header-toolbar/header-toolbar.compone
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
+    ClipboardModule
   ],
   declarations: [HomePage, HeaderToolbarComponent]
 })

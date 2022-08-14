@@ -2,8 +2,21 @@
   font-family: 'Inconsolata', monospace;
 }
 
-ion-content {
-  --padding-bottom: 600px;
+/* ion-content {
+  --padding-bottom: 50px;
+} */
+
+.cover-image-container {
+  position: absolute;
+}
+
+.cover-image {
+  padding-left: 3%;
+  margin-top: 3em;
+}
+
+.cover-image-text {
+  position: relative;
 }
 
 .info-segment {
@@ -19,9 +32,11 @@ ion-content {
 
 .contact-info {
   float: right;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
   z-index: 0;
+  max-width: 91%;
+  width: 385px;
 }
 
 .contactInfoIcons {
@@ -34,6 +49,12 @@ ion-content {
   padding-right: 10px;
 }
 
+.contact-label:active {
+  color: aqua;
+  background-color: #6c7427;
+  background: #6c7427;
+  visibility: hidden;
+}
 
 
 #firstNameColor {
@@ -158,4 +179,19 @@ ion-header {
 .column-widths {
   display: grid;
   grid-template-columns: 25% 25% 50%;
+}
+
+.typewriterHeadings {
+  mix-blend-mode: difference;
+}
+
+.bottom-toolbar {
+  position: relative;
+  bottom: 0px;
+  height: 10%;
+  z-index: 1;
+  padding-top: 50px;
+  background: #402929;
+  margin-left: 3%;
+  text-align: center;
 }

@@ -3,8 +3,14 @@
 <ion-content>
   <app-header-toolbar></app-header-toolbar>
 
+  <ion-refresher slot="fixed" pullFactor="0.5" pullMin="100" pullMax="200" (ionRefresh)="doRefresh()" [disabled]="!isMobile">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
   <div class="sidebar">
   </div>
+
+  <!-- <ion-img src="assets/images/1.jpg" class="cover-image"></ion-img> -->
 
   <div class="info-segment">
     <h1 id="myName" class="waviy nameBackgroundAnimation">
@@ -15,13 +21,15 @@
     <ion-card class="contact-info">
       <ion-item>
         <ion-img src="assets/icon/phone.png" title="My phone number" class="contactInfoIcons"></ion-img>
-        <ion-label class="contact-label">(+385) 95 527 9214</ion-label>
-        <ion-icon name="copy" hidden="true"></ion-icon>
+        <ion-label class="contact-label" (mouseenter) ="mouseEnter(0)" (mouseleave) ="mouseLeave(0)" ngxClipboard [cbContent]="'+385955279214'"
+        title="Copy">(+385) 95 527 9214</ion-label>
+        <ion-icon name="copy"  [hidden]="copyIconHidden[0]"></ion-icon>
       </ion-item>
       <ion-item>
         <ion-img src="assets/icon/gmail.png" title="My email" class="contactInfoIcons"></ion-img>
-        <ion-label class="contact-label">tomislav.markovica1@gmail.com</ion-label>
-        <ion-icon name="copy" hidden="true"></ion-icon>
+        <ion-label class="contact-label" (mouseenter) ="mouseEnter(1)" (mouseleave) ="mouseLeave(1)" ngxClipboard [cbContent]="'tomislav.markovica1@gmail.com'"
+          title="Copy">tomislav.markovica1@gmail.com</ion-label>
+        <ion-icon name="copy" [hidden]="copyIconHidden[1]"></ion-icon>
       </ion-item>
     </ion-card>
   </div>
@@ -184,5 +192,17 @@
     </ion-row>
 
   </ion-grid>
+
+
+  <div class="bottom-toolbar">
+    <ion-icon src="assets/icon/favicon.png"></ion-icon>
+    <p></p>
+  </div>
+
+  <!-- <div class="cover-image-container">
+    <ion-img src="assets/images/1.jpg" class="cover-image"></ion-img>
+    <div class="cover-image-text">
+    </div>
+  </div> -->
 
 </ion-content>

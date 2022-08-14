@@ -25,6 +25,8 @@
     "@capacitor/keyboard": "4.0.1",
     "@capacitor/status-bar": "4.0.1",
     "@ionic/angular": "^6.1.9",
+    "ng-image-slider": "^6.0.0",
+    "ngx-clipboard": "^15.1.0",
     "rxjs": "~6.6.0",
     "t-writer.js": "^1.0.4",
     "tslib": "^2.2.0",
