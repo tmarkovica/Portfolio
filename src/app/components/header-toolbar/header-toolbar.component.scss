@@ -1,0 +1,47 @@
+.toolbar {
+    height: 3em;
+    width: 100%;
+    background: #444242;
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    margin-bottom: 3em;
+
+    align-items: center;
+    justify-content: center;
+    text-align: end;
+    padding-left: 5%;
+}
+
+.icon-bar a img {
+    max-height: 40px;
+}
+
+.icon-bar a img:hover {
+    background-color: green;
+}
+
+.nav-controls {
+    padding-left: 30px;
+}
+
+.nav-button {
+    --background: transparent;
+    width: 100%;
+}
+
+.nav-button:hover {
+    border-bottom: 4px blue solid;
+}
+
+.nav-controls-mobile {
+    padding-right: 30px;
+}
+
+.sidenav {
+    background-color: #5f5c5c;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    width: 60%;
+}

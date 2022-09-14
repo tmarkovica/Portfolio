@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
-import { Meta, Title } from '@angular/platform-browser';
-import { ActivatedRoute } from '@angular/router';
 import { Platform } from '@ionic/angular';
 import { PlatformService } from './services/platform.service';
+import AOS from "aos";
 
 @Component({
   selector: 'app-root',

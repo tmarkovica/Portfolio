@@ -7,16 +7,8 @@ const routes: Routes = [
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
   {
-    path: 'contact',
-    loadChildren: () => import('./contact/contact.module').then( m => m.ContactPageModule)
-  },
-  {
     path: '',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
-  },
-  {
-    path: 'about',
-    loadChildren: () => import('./about/about.module').then( m => m.AboutPageModule)
   },
 ];
 

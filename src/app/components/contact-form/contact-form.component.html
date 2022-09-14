@@ -1,0 +1,33 @@
+<div id="content" class="left-margin">
+
+  <h2 class="left-margin">Contact me</h2>
+
+  <ion-item class="formItem">
+    <ion-label position="floating">Name</ion-label>
+    <ion-input type="text" [(ngModel)]="name"></ion-input>
+  </ion-item>
+
+  <ion-item class="formItem">
+    <ion-label position="floating">Your email</ion-label>
+    <ion-input type="email" [(ngModel)]="email"></ion-input>
+  </ion-item>
+
+  <ion-item class="formItem">
+    <ion-label position="floating">Confirm email</ion-label>
+    <ion-input type="email" [(ngModel)]="confirm_email"></ion-input>
+  </ion-item>
+  
+  <ion-item class="formItem">
+    <ion-label position="floating">Subject</ion-label>
+    <ion-input type="text" [(ngModel)]="subject"></ion-input>
+  </ion-item>
+  
+  <ion-item class="formItem" autoGrow="true">
+    <ion-label position="floating">Message</ion-label>
+    <ion-textarea type="text" autoGrow="true" [(ngModel)]="message"></ion-textarea>
+  </ion-item>
+  
+  <ion-button class="formItem" id="button-send" (click)="sendMessage()">Send</ion-button>
+
+  <p [hidden]="responseTextHidden" id="responseText">Successfully sent.</p>
+</div>

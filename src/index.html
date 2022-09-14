@@ -19,13 +19,22 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
 
+  <!-- animate on scroll https://github.com/michalsnik/aos -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
   <!-- add to homescreen for ios -->
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 </head>
 
+  
+
 <body>
   <app-root></app-root>
+  <script>
+      window.addEventListener('load', function() { AOS.init(); });
+  </script>
 </body>
-
+  
 </html>

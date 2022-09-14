@@ -10,7 +10,7 @@ import { PlatformService } from '../services/platform.service';
 })
 export class HomePage implements OnInit {
 
-  private headings: string[] = ["Biography", "Skills", "Language Skills", "My Web Projects"];
+  private headings: string[] = ["Education", "Skills", "Language Skills", "My Web Projects"];
 
   isMobile: boolean;
   
