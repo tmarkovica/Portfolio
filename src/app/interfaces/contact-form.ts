@@ -1,8 +1,7 @@
 export interface ContactForm {
-
-    name: string,
-    email: string,
-    subject: string,
-    message: string,
-    platform: string
+    name: string;
+    email: string;
+    subject: string;
+    message: string;
+    platform: string;
 }

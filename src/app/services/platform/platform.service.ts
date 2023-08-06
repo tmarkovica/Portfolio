@@ -4,15 +4,16 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class PlatformService {
+  isMobile: boolean;
 
   constructor() { }
 
-  isMobile: boolean;
-
   getPlatformToString(): string {
-    if (this.isMobile)
-      return "mobile"
-    else
-      return "web"
+    if (this.isMobile) {
+      return 'mobile';
+    }
+    else {
+      return 'web';
+    }
   }
 }

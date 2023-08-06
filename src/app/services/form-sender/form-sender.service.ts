@@ -1,4 +1,4 @@
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { ContactForm } from 'src/app/interfaces/contact-form';
 import { environment } from 'src/environments/environment';
@@ -15,7 +15,7 @@ export class FormSenderService {
 
   send(contactForm: ContactForm): Promise<string> {
 
-    return this.http.post("http://my-mailman.herokuapp.com/contact-form", contactForm).toPromise()
+    return this.http.post('https://my-mailman.herokuapp.com/contact-form', contactForm).toPromise()
     .then((val: any) => {
       console.log(val);
       const result = val.result;
@@ -29,7 +29,7 @@ export class FormSenderService {
   }
 
   getEmailsSent() {
-    this.http.get("https://my-mailman.herokuapp.com/emails-sent", {
+    this.http.get('https://my-mailman.herokuapp.com/emails-sent', {
     }).toPromise().then((res: number) => {
       console.log(`Emails sent ${res}`);
     });

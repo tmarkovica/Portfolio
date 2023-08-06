@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouteReuseStrategy } from '@angular/router';
 
-import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
+import { IonicModule } from '@ionic/angular';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -13,15 +12,15 @@ import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [AppComponent],
   imports: [
-    BrowserModule, 
+    BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
   ],
-  providers: [{ 
+  providers: [{
     provide: LocationStrategy//RouteReuseStrategy
-    , 
-    useClass: HashLocationStrategy//IonicRouteStrategy 
+    ,
+    useClass: HashLocationStrategy//IonicRouteStrategy
   }],
   bootstrap: [AppComponent],
 })

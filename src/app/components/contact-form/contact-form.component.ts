@@ -1,22 +1,18 @@
 import { Component, OnInit } from '@angular/core';
-import { ROUTER_CONFIGURATION } from '@angular/router';
 import { ContactForm } from 'src/app/interfaces/contact-form';
-import { FormSenderService } from 'src/app/services/formSender/form-sender.service';
-import { PlatformService } from 'src/app/services/platform.service';
-
+import { FormSenderService } from 'src/app/services/form-sender/form-sender.service';
+import { PlatformService } from 'src/app/services/platform/platform.service';
 @Component({
   selector: 'app-contact-form',
   templateUrl: './contact-form.component.html',
   styleUrls: ['./contact-form.component.scss'],
 })
 export class ContactFormComponent implements OnInit {
-
-  name: string = "";
-  email: string = "";
-  confirm_email: string = "";
-  subject: string = "";
-  message: string = "";
-
+  name: string = '';
+  email: string = '';
+  confirm_email: string = '';
+  subject: string = '';
+  message: string = '';
   responseTextHidden: boolean = true;
 
   constructor(
@@ -28,13 +24,12 @@ export class ContactFormComponent implements OnInit {
   }
 
   sendMessage() {
-    if (this.name == "" || this.email == "" || this.subject == "") {
-      this.displayMessage("Some fields are empty.");
+    if (this.name === '' || this.email === '' || this.subject === '') {
+      this.displayMessage('Some fields are empty.');
       return;
     }
-    
-    if (this.email != this.confirm_email) {
-      this.displayMessage("Email fields do not match.")
+    if (this.email !== this.confirm_email) {
+      this.displayMessage('Email fields do not match.');
       return;
     }
 
@@ -43,35 +38,35 @@ export class ContactFormComponent implements OnInit {
       email: this.email,
       subject: this.subject,
       message: this.message,
-      platform: this.platformService.getPlatformToString()
-    }
+      platform: this.platformService.getPlatformToString(),
+    };
 
     this.formSender.send(form).then(result => {
       this.displayMessage(result);
-      if (result == "Sent")
+      if (result === 'Sent')
       {
         this.responseTextHidden = false;
         this.clearFromFields();
-        this.setMessageColor("green");
+        this.setMessageColor('green');
       }
-    })
+    });
   }
 
   private clearFromFields() {
-    this.name = "";
-    this.email = "";
-    this.confirm_email = "";
-    this.subject = "";
-    this.message = "";
+    this.name = '';
+    this.email = '';
+    this.confirm_email = '';
+    this.subject = '';
+    this.message = '';
   }
 
   private displayMessage(message: string) {
-    document.getElementById("responseText").innerText = message;
-    this.setMessageColor("red");
+    document.getElementById('responseText').innerText = message;
+    this.setMessageColor('red');
     this.responseTextHidden = false;
   }
 
   private setMessageColor(color: string) {
-    document.getElementById("responseText").style.color = color;
+    document.getElementById('responseText').style.color = color;
   }
 }

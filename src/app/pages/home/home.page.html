@@ -1,0 +1,179 @@
+<app-header-toolbar></app-header-toolbar>
+
+<ion-content>
+
+  <ion-refresher slot="fixed" pullFactor="0.5" pullMin="100" pullMax="200" (ionRefresh)="doRefresh()" [disabled]="!isMobile">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+  <h2>CONTACT</h2>
+
+  <div class="section">
+    <ion-item class="contact">
+      <ion-icon name="call-outline"></ion-icon>
+      <ion-label>(+385) 95 527 9214</ion-label>
+    </ion-item>
+    <ion-item class="contact">
+      <ion-icon name="mail-outline"></ion-icon>
+      <ion-label>tomislav.markovica1@gmail.com</ion-label>
+    </ion-item>
+    <ion-item class="contact">
+      <ion-icon name="logo-github"></ion-icon>
+      <ion-label><a href="https://github.com/tmarkovica">https://github.com/tmarkovica</a></ion-label>
+    </ion-item>
+    <ion-item class="contact">
+      <ion-icon name="logo-linkedin"></ion-icon>
+      <ion-label><a href="https://www.linkedin.com/in/tomislav-markovica-3118bb203/">https://www.linkedin.com/in/tomislav-markovica-3118bb203/</a></ion-label>
+    </ion-item>
+  </div>
+
+  <div style="padding-bottom: 20px;">
+    <hr class="line-section-end">
+  </div>
+
+  <h2>SKILLS</h2>
+
+  <div class="section">
+    <ion-grid class="skills">
+      <ion-col size="6">
+        <ion-row>HTML, SCSS</ion-row>
+        <ion-row>TypeScript</ion-row>
+        <ion-row class="indent-row"><label class="bullet">L</label>Angular</ion-row>
+        <ion-row class="indent-row"><label class="bullet">L</label>Ionic</ion-row>
+
+        <ion-row>C#</ion-row>
+        <ion-row class="indent-row"><label class="bullet">L</label>Unity</ion-row>
+        <ion-row class="indent-row"><label class="bullet">L</label>Windows Forms</ion-row>
+
+        <ion-row>Git</ion-row>
+        <ion-row>C/C++</ion-row>
+      </ion-col>
+
+      <ion-col size="6">
+        <ion-row>SQL</ion-row>
+        <ion-row>Postman</ion-row>
+        <ion-row>Design Patterns</ion-row>
+        <ion-row>Alghoritms & Data Structures</ion-row>
+        <ion-row>UML</ion-row>
+        <ion-row>MS Office (Word, Excel, PowerPoint)</ion-row>
+        <ion-row>Android Studio</ion-row>
+        <ion-row class="indent-row"><label class="bullet">L</label>Kotlin</ion-row>
+        <ion-row class="indent-row"><label class="bullet">L</label>Java</ion-row>
+      </ion-col>
+    </ion-grid>
+  </div>
+
+  <div style="padding-bottom: 20px;">
+    <hr class="line-section-end">
+  </div>
+
+  <h2>EDUCATION</h2>
+
+  <div class="section">
+
+    <div class="study-programme">
+      <h3>University graduate study programme in Software Engineering</h3>
+      <ion-row>Sveučilišni diplomski studij Računarstva, izborni blok Programsko inženjerstvo</ion-row>
+      <div class="study-programme__details">
+        <ion-row>10/2021 – 10/2023</ion-row>
+        <ion-row><b>univ. mag. ing. comp.</b></ion-row>
+        <ion-row>Fakultet elektrotehnike, računarstva i informacijskih tehnologija Osijek</ion-row>
+        <ion-row><a href="https://www.ferit.unios.hr/2021/">https://www.ferit.unios.hr/2021/</a></ion-row>
+      </div>
+    </div>
+
+    <div class="study-programme">
+      <h3>University undergraduate study programme in Computer Science</h3>
+      <ion-row>Sveučilišni preddiplomski studij Računarstvo</ion-row>
+      <div class="study-programme__details">
+        <ion-row>10/2017 – 09/2021</ion-row>
+        <ion-row><b>univ. bacc. ing. comp.</b></ion-row>
+        <ion-row>Fakultet elektrotehnike, računarstva i informacijskih tehnologija Osijek</ion-row>
+        <ion-row><a href="https://www.ferit.unios.hr/2021/">https://www.ferit.unios.hr/2021/</a></ion-row>
+      </div>
+    </div>
+
+    <div class="study-programme">
+      <h3>Computer Technician</h3>
+      <ion-row>Tehničar za računalstvo</ion-row>
+      <div class="study-programme__details">
+        <ion-row>2013 – 2017</ion-row>
+        <ion-row>Srednja strukovna škola Đurđevac</ion-row>
+        <ion-row><a href="http://ss-strukovna-djurdjevac.skole.hr/">http://ss-strukovna-djurdjevac.skole.hr/</a></ion-row>
+      </div>
+    </div>
+  </div>
+
+  <div style="padding-bottom: 20px;">
+    <hr class="line-section-end">
+  </div>
+
+  <h2>LANGUAGE SKILLS</h2>
+
+  <div class="section">
+    <ion-grid class="language-skills">
+
+        <ion-row class="language-skills__header">
+          <ion-col></ion-col>
+          <ion-col>Listening</ion-col>
+          <ion-col>Reading</ion-col>
+          <ion-col>Spoken production</ion-col>
+          <ion-col>Spoken interaction</ion-col>
+          <ion-col>Writing</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col><b>Croatian</b></ion-col>
+          <ion-col>Native</ion-col>
+          <ion-col>Native</ion-col>
+          <ion-col>Native</ion-col>
+          <ion-col>Native</ion-col>
+          <ion-col>Native</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col><b>English</b></ion-col>
+          <ion-col>C1</ion-col>
+          <ion-col>C1</ion-col>
+          <ion-col>B2</ion-col>
+          <ion-col>B2</ion-col>
+          <ion-col>C1</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col><b>German</b></ion-col>
+          <ion-col>A1</ion-col>
+          <ion-col>A1</ion-col>
+          <ion-col>A1</ion-col>
+          <ion-col>A1</ion-col>
+          <ion-col>A2</ion-col>
+        </ion-row>
+
+    </ion-grid>
+  </div>
+
+  <div style="padding-bottom: 20px;">
+    <hr class="line-section-end">
+  </div>
+
+  <h2>PROJECTS</h2>
+
+  <div class="section projects">
+
+    <ng-container *ngFor="let item of myProjects;">
+      <div class="projects__row">
+        <a [href]="item.hosted">
+          <ion-img src="../../../assets/folder.png" class="folder-image" title="Open project, hosted on Firebase."></ion-img>
+        </a>
+        <ion-label><a [href]="item.hosted" title="Open project, hosted on Firebase.">{{item.displayName}}</a></ion-label>
+        <ion-label><a [href]="item.repository" title="Link to GitHub Repository">repository</a></ion-label>
+        <div [innerHTML]="item.description"></div>
+      </div>
+
+      <ion-item-divider></ion-item-divider>
+    </ng-container>
+
+  </div>
+
+  <div style="padding-bottom: 20px;">
+    <hr class="line-section-end">
+  </div>
+
+</ion-content>

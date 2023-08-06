@@ -24,3 +24,55 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+* {
+  /* font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Roboto Mono', monospace; */
+  font-family: 'Roboto Mono';
+  font-size: 0.9rem;
+}
+
+ion-content {
+  --padding-top: 20px;
+  --padding-bottom: 20px;
+  --padding-start: 40px;
+  --padding-end: 40px;
+
+  @media only screen and (max-width: 650px) {
+    --padding-start: 20px;
+    --padding-end: 20px;
+  }
+
+  @media only screen and (max-width: 450px) {
+    --padding-start: 10px;
+    --padding-end: 10px;
+  }
+}
+
+h2 {
+  opacity: 0.4;
+  font-size: 1.9em !important;
+  /* Disable text selection for modern browsers */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+h3 {
+  color: rgb(34, 105, 187);
+  font-size: 1.25em !important;
+}
+
+.bullet {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-right: 15px;
+}

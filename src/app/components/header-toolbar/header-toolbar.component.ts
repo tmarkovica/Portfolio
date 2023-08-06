@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import Typewriter from 't-writer.js'
-import { PlatformService } from '../../services/platform.service';
+import Typewriter from 't-writer.js';
+import { PlatformService } from 'src/app/services/platform/platform.service';
 
 @Component({
   selector: 'app-header-toolbar',
@@ -9,7 +9,7 @@ import { PlatformService } from '../../services/platform.service';
 })
 export class HeaderToolbarComponent implements OnInit {
 
-  isMobile: boolean
+  isMobile: boolean;
 
   private navOpen: boolean = false;
   mobileNavHidden: boolean = true;

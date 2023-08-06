@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { Platform } from '@ionic/angular';
-import { PlatformService } from './services/platform.service';
-import AOS from "aos";
+import { PlatformService } from './services/platform/platform.service';
 
 @Component({
   selector: 'app-root',
@@ -18,11 +17,7 @@ export class AppComponent {
     this.initializeApp();
   }
 
-  ngOnInit() {
-  }
-
-  initializeApp() {
+  private initializeApp() {
     this.platformService.isMobile = this.platform.is('mobile');
-    console.log("App initialized");
   }
 }
