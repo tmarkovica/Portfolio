@@ -7,7 +7,7 @@ import { HomePage } from './home.page';
 import { HomePageRoutingModule } from './home-routing.module';
 import { HeaderToolbarComponent } from '../../components/header-toolbar/header-toolbar.component';
 import { ClipboardModule } from 'ngx-clipboard';
-import { ContactFormComponent } from '../../components/contact-form/contact-form.component';
+import { CvSectionsModule } from 'src/app/components/cv-sections/cv-sections.module';
 
 
 @NgModule({
@@ -16,8 +16,12 @@ import { ContactFormComponent } from '../../components/contact-form/contact-form
     FormsModule,
     IonicModule,
     HomePageRoutingModule,
-    ClipboardModule
+    ClipboardModule,
+    CvSectionsModule,
   ],
-  declarations: [HomePage, HeaderToolbarComponent, ContactFormComponent]
+  declarations: [
+    HomePage,
+    HeaderToolbarComponent,
+  ]
 })
 export class HomePageModule {}

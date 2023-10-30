@@ -1,0 +1,39 @@
+.projects {
+  display: inline-grid;
+}
+
+.folder-image {
+  width: 70px;
+  height: 70px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: lightblue;
+  }
+}
+
+.projects__row {
+  display: inline-grid;
+  grid-template-columns: min-content 20% min-content auto;
+  align-items: center;
+  justify-content: start;
+  justify-items: start;
+  gap: 40px;
+  padding: 20px;
+
+  @media only screen and (max-width: 650px) {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: row;
+
+    & > * { // target all children elements
+      width: 100%;
+    }
+  }
+
+  &:hover {
+    background-color: #1d1d1d;
+  }
+}

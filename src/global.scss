@@ -31,6 +31,7 @@
   font-family: 'Roboto Mono', monospace; */
   font-family: 'Roboto Mono';
   font-size: 0.9rem;
+  line-height: 2em;
 }
 
 ion-content {
@@ -75,4 +76,9 @@ h3 {
   -ms-user-select: none;
   user-select: none;
   margin-right: 15px;
+}
+
+
+.section-divider-line {
+  background: #ffffff54;
 }

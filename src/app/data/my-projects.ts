@@ -35,7 +35,7 @@ export const MY_PROJECTS: AboutProject[] = [
     displayName: "Fictive Company Website",
     hosted: 'https://tmarkovica.github.io/ORWiMA-HTML-projekt/index.html',
     repository: 'https://github.com/tmarkovica/ORWiMA-HTML-projekt',
-    description: 'Project for Web Dvelopment Basics course, HTML and CSS.'
+    description: 'Project for Web Dvelopment Basics course, HTML and CSS. One of my first website projects.'
   },
   {
     displayName: "ValueCalc",

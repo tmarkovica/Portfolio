@@ -1,0 +1,14 @@
+<div class="projects">
+  <ng-container *ngFor="let item of myProjects;">
+    <div class="projects__row">
+      <a [href]="item.hosted">
+        <ion-img src="../../../assets/folder.png" class="folder-image" title="Open project, hosted on Firebase."></ion-img>
+      </a>
+      <ion-label><a [href]="item.hosted" title="Open project, hosted on Firebase.">{{item.displayName}}</a></ion-label>
+      <ion-label><a [href]="item.repository" title="Link to GitHub Repository">repository</a></ion-label>
+      <div [innerHTML]="item.description"></div>
+    </div>
+
+    <ion-item-divider></ion-item-divider>
+  </ng-container>
+</div>
